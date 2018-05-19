@@ -86,3 +86,11 @@
 	path = vendor
 	url = https://gerrit.wikimedia.org/r/mediawiki/vendor
 	branch = REL1_30
+[submodule "extensions/UploadWizard"]
+	path = extensions/UploadWizard
+	url = https://github.com/wikimedia/mediawiki-extensions-UploadWizard.git
+	branch = REL1_31
+[submodule "extensions/EventLogging"]
+	path = extensions/EventLogging
+	url = https://github.com/wikimedia/mediawiki-extensions-EventLogging.git
+	branch = REL1_31

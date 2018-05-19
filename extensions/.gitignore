@@ -1,8 +1,3 @@
 *
 !README
 !.gitignore
-!UploadWizard
-!UploadWizard/*
-
-!EventLogging
-!EventLogging/*
