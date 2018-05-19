@@ -15,6 +15,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
 }
 
+$IP = "/var/www/apps/wiki";
+
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
@@ -142,7 +144,7 @@ wfLoadExtension( 'Poem' );
 wfLoadExtension( 'WikiEditor' );
 wfLoadExtension( 'Interwiki' );
 //wfLoadExtension( 'MjsPicture' );
-require_once "$IP/extensions/MjsPicture/MjsPicture.php";
+require_once ("$IP/extensions/MjsPicture/MjsPicture.php");
 
 # Enables use of WikiEditor by default but still allow users to disable it in preferences
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
@@ -173,3 +175,7 @@ $wgSharedUploadPath = "https://pool.wiki.mathiasjseib.de/images";
 $wgSharedUploadDirectory = "/var/www/vhosts/pool.wiki.mathiasjseib.de/images/";
 $wgUseSharedUploads = true;
 $wgHashedSharedUploadDirectory = true;
+
+wfLoadExtension( 'Cite' );
+wfLoadExtension( 'Poem' );
+//require_once( "$IP/extensions/MarkdownExtraParser/MarkdownExtraParser.php" );
