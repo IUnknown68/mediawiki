@@ -173,5 +173,3 @@ $wgSharedUploadPath = "https://pool.wiki.mathiasjseib.de/images";
 $wgSharedUploadDirectory = "/var/www/vhosts/pool.wiki.mathiasjseib.de/images/";
 $wgUseSharedUploads = true;
 $wgHashedSharedUploadDirectory = true;
-
-wfLoadExtension( 'MsUpload' );
