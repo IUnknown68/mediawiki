@@ -174,7 +174,4 @@ $wgSharedUploadDirectory = "/var/www/vhosts/pool.wiki.mathiasjseib.de/images/";
 $wgUseSharedUploads = true;
 $wgHashedSharedUploadDirectory = true;
 
-require_once( "$IP/extensions/UploadWizard/UploadWizard.php" );
-// Needed to make UploadWizard work in IE, see https://phabricator.wikimedia.org/T41877
-//$wgApiFrameOptions = 'SAMEORIGIN';
-
+wfLoadExtension( 'MsUpload' );
