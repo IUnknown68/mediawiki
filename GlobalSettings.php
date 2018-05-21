@@ -136,15 +136,8 @@ wfLoadSkin( 'Modern' );
 wfLoadSkin( 'MonoBook' );
 wfLoadSkin( 'Vector' );
 
-
 # End of automatically generated settings.
 # Add more configuration options below.
-
-wfLoadExtension( 'Poem' );
-wfLoadExtension( 'WikiEditor' );
-wfLoadExtension( 'Interwiki' );
-//wfLoadExtension( 'MjsPicture' );
-require_once ("$IP/extensions/MjsPicture/MjsPicture.php");
 
 # Enables use of WikiEditor by default but still allow users to disable it in preferences
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
@@ -176,6 +169,15 @@ $wgSharedUploadDirectory = "/var/www/vhosts/pool.wiki.mathiasjseib.de/images/";
 $wgUseSharedUploads = true;
 $wgHashedSharedUploadDirectory = true;
 
+wfLoadExtension( 'Poem' );
+wfLoadExtension( 'WikiEditor' );
+wfLoadExtension( 'Interwiki' );
 wfLoadExtension( 'Cite' );
 wfLoadExtension( 'Poem' );
+wfLoadExtension( 'MobileFrontend' );
+//wfLoadExtension( 'MjsPicture' );
+require_once ("$IP/extensions/MjsPicture/MjsPicture.php");
+
 //require_once( "$IP/extensions/MarkdownExtraParser/MarkdownExtraParser.php" );
+
+$wgMFAutodetectMobileView = true;
