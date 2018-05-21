@@ -81,23 +81,11 @@ class TraditionalImageGallery extends ImageGalleryBase {
 			$descQuery = false;
 			if ( $nt->getInterwiki() === 'mjs' ) {
 		    $id = intval($nt->mTextform);
-		    $ar = explode('|', $text);
-		    array_shift($ar);
-		    if (count($ar)) {
-			    $title = array_pop($ar);
-		    } else {
-			    $title = $id;
-		    }
-		    if (count($ar)) {
-			    $size = array_pop($ar);
-		    } else {
-			    $size = 'tn';
-		    }
 		    $url = 'https://admin.mathiasjseib.de/de/picture/'.$id;
-		    $imageUrl = 'https://pictures.mathiasjseib.de/'.$size.'/'.$id.'.jpg';
-		    $text = htmlspecialchars( $nt->getText() );
+		    $imageUrl = 'https://pictures.mathiasjseib.de/size/'.$id.'.jpg';
+		    $text = htmlspecialchars( $text );
 				$output .= <<<EOF
-<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+<li class="gallerybox-mjs" style="width: 155px"><div style="width: 155px">
 	<div class="thumb">
 		<div>
 			<a href="$url" class="image" target="mjs-admin">

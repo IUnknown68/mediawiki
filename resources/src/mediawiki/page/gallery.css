@@ -187,12 +187,12 @@ ul.mw-gallery-slideshow li.gallerycarousel {
 	}
 }
 
-.mw-gallery-traditional li.gallerybox div.thumb {
+.mw-gallery-traditional li.gallerybox-mjs div.thumb {
 	width: 150px;
 	height: 150px;
 }
 
-ul.mw-gallery-traditional li.gallerybox div.thumb > div {
+ul.mw-gallery-traditional li.gallerybox-mjs div.thumb > div {
   display: flex;
   justify-content: center;
   height: 100%;
@@ -200,7 +200,7 @@ ul.mw-gallery-traditional li.gallerybox div.thumb > div {
   flex-direction: column;
 }
 
-ul.mw-gallery-traditional li.gallerybox div.gallerytext {
+ul.mw-gallery-traditional li.gallerybox-mjs div.gallerytext {
 	text-align: center;
 }
 
