@@ -186,3 +186,21 @@ ul.mw-gallery-slideshow li.gallerycarousel {
 		background-color: #f8f9fa;
 	}
 }
+
+.mw-gallery-traditional li.gallerybox div.thumb {
+	width: 150px;
+	height: 150px;
+}
+
+ul.mw-gallery-traditional li.gallerybox div.thumb > div {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+ul.mw-gallery-traditional li.gallerybox div.gallerytext {
+	text-align: center;
+}
+

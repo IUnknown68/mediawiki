@@ -79,7 +79,39 @@ class TraditionalImageGallery extends ImageGalleryBase {
 			$link = $pair[3];
 
 			$descQuery = false;
-			if ( $nt->getNamespace() === NS_FILE ) {
+			if ( $nt->getInterwiki() === 'mjs' ) {
+		    $id = intval($nt->mTextform);
+		    $ar = explode('|', $text);
+		    array_shift($ar);
+		    if (count($ar)) {
+			    $title = array_pop($ar);
+		    } else {
+			    $title = $id;
+		    }
+		    if (count($ar)) {
+			    $size = array_pop($ar);
+		    } else {
+			    $size = 'tn';
+		    }
+		    $url = 'https://admin.mathiasjseib.de/de/picture/'.$id;
+		    $imageUrl = 'https://pictures.mathiasjseib.de/'.$size.'/'.$id.'.jpg';
+		    $text = htmlspecialchars( $nt->getText() );
+				$output .= <<<EOF
+<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+	<div class="thumb">
+		<div>
+			<a href="$url" class="image" target="mjs-admin">
+				<img alt="" src="$imageUrl" style="max-width:120px;max-height:120px;">
+			</a>
+		</div>
+	</div>
+	<div class="gallerytext">
+		<p>$text</p>
+	</div>
+</div></li>
+EOF;
+				continue;
+			} else if ( $nt->getNamespace() === NS_FILE ) {
 				# Get the file...
 				if ( $this->mParser instanceof Parser ) {
 					# Give extensions a chance to select the file revision for us
