@@ -143,6 +143,10 @@ wfLoadSkin( 'Vector' );
 wfLoadExtension( 'Poem' );
 wfLoadExtension( 'WikiEditor' );
 wfLoadExtension( 'Interwiki' );
+wfLoadExtension( 'Cite' );
+wfLoadExtension( 'Poem' );
+//require_once( "$IP/extensions/MarkdownExtraParser/MarkdownExtraParser.php" );
+wfLoadExtension( 'MobileFrontend' );
 //wfLoadExtension( 'MjsPicture' );
 require_once ("$IP/extensions/MjsPicture/MjsPicture.php");
 
@@ -176,9 +180,5 @@ $wgSharedUploadDirectory = "/var/www/vhosts/pool.wiki.mathiasjseib.de/images/";
 $wgUseSharedUploads = true;
 $wgHashedSharedUploadDirectory = true;
 
-wfLoadExtension( 'Cite' );
-wfLoadExtension( 'Poem' );
-//require_once( "$IP/extensions/MarkdownExtraParser/MarkdownExtraParser.php" );
-
-wfLoadExtension( 'MobileFrontend' );
 $wgMFAutodetectMobileView = true;
+$wgMFDefaultSkinClass = 'SkinVector';
