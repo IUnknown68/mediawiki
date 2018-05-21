@@ -179,3 +179,6 @@ $wgHashedSharedUploadDirectory = true;
 wfLoadExtension( 'Cite' );
 wfLoadExtension( 'Poem' );
 //require_once( "$IP/extensions/MarkdownExtraParser/MarkdownExtraParser.php" );
+
+wfLoadExtension( 'MobileFrontend' );
+$wgMFAutodetectMobileView = true;
