@@ -94,11 +94,11 @@
 	path = extensions/ReplaceText
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ReplaceText
 	branch = REL1_31
-[submodule "extensions/MsUpload"]
-	path = extensions/MsUpload
-	url = https://github.com/wikimedia/mediawiki-extensions-MsUpload.git
-	branch = REL1_31
 [submodule "extensions/MobileFrontend"]
 	path = extensions/MobileFrontend
 	url = https://github.com/wikimedia/mediawiki-extensions-MobileFrontend.git
+	branch = REL1_31
+[submodule "extensions/MsUpload"]
+	path = extensions/MsUpload
+	url = https://github.com/wikimedia/mediawiki-extensions-MsUpload.git
 	branch = REL1_31
