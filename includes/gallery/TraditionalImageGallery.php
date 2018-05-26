@@ -82,10 +82,10 @@ class TraditionalImageGallery extends ImageGalleryBase {
 			if ( $nt->getInterwiki() === 'mjs' ) {
 		    $id = intval($nt->mTextform);
 		    $url = 'https://admin.mathiasjseib.de/de/picture/'.$id;
-		    $imageUrl = 'https://pictures.mathiasjseib.de/size/'.$id.'.jpg';
+		    $imageUrl = 'https://pictures.mathiasjseib.de/tn/'.$id.'.jpg';
 		    $text = htmlspecialchars( $text );
 				$output .= <<<EOF
-<li class="gallerybox-mjs" style="width: 155px"><div style="width: 155px">
+<li class="gallerybox gallerybox-mjs" style="width: 155px"><div style="width: 155px">
 	<div class="thumb">
 		<div>
 			<a href="$url" class="image" target="mjs-admin">

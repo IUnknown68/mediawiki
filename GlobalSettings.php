@@ -144,7 +144,7 @@ wfLoadExtension( 'Poem' );
 wfLoadExtension( 'WikiEditor' );
 wfLoadExtension( 'Interwiki' );
 wfLoadExtension( 'Cite' );
-wfLoadExtension( 'Poem' );
+wfLoadExtension( 'ParserFunctions' );
 //require_once( "$IP/extensions/MarkdownExtraParser/MarkdownExtraParser.php" );
 wfLoadExtension( 'MobileFrontend' );
 //wfLoadExtension( 'MjsPicture' );
